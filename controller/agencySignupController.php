@@ -1,6 +1,6 @@
 <?php
 
-include ('../config/config.php');
+include('../config/config.php');
 
 $username = $_REQUEST['username'];
 

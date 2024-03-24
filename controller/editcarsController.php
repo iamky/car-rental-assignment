@@ -3,7 +3,7 @@
 session_start();
 
 
-include ('../config/config.php');
+include('../config/config.php');
 
 
 $ausername = $_SESSION['agencyusername'];
@@ -18,7 +18,7 @@ $button = $_REQUEST['submit'];
 
 if ($button == "update") {
 
-$query = "UPDATE cars SET vmodel='$newvmodel', vnumber='$newvnumber', capacity='$newcapacity', rent='$newrent' WHERE vnumber='$oldvnumber' ";
+  $query = "UPDATE cars SET vmodel='$newvmodel', vnumber='$newvnumber', capacity='$newcapacity', rent='$newrent' WHERE vnumber='$oldvnumber' ";
   // echo $query;
   $exc = mysqli_query($conn, $query);
 
@@ -28,10 +28,7 @@ $query = "UPDATE cars SET vmodel='$newvmodel', vnumber='$newvnumber', capacity='
 
 
     header("Location: ../views/editcars.php");
-    
-
   } else {
     echo "Cannot update car...";
   }
 }
-?>

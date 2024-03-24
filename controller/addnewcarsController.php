@@ -3,7 +3,7 @@
 session_start();
 
 
-include ('../config/config.php');
+include('../config/config.php');
 
 
 $ausername = $_SESSION['agencyusername'];
@@ -19,8 +19,8 @@ $button = $_REQUEST['submit'];
 
 if ($button == "save") {
 
-$query = "INSERT INTO cars (ausername, vmodel, vnumber, capacity, rent, status) VALUES ('$ausername','$vmodel','$vnumber','$capacity','$rent', '$status')";
-   echo $query;
+  $query = "INSERT INTO cars (ausername, vmodel, vnumber, capacity, rent, status) VALUES ('$ausername','$vmodel','$vnumber','$capacity','$rent', '$status')";
+  echo $query;
   $exc = mysqli_query($conn, $query);
 
   $norows = mysqli_num_rows($exc);
@@ -29,10 +29,7 @@ $query = "INSERT INTO cars (ausername, vmodel, vnumber, capacity, rent, status) 
 
 
     header("Location: ../views/editcars.php");
-    
-
   } else {
     echo "Cannot save car...";
   }
 }
-?>

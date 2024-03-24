@@ -3,7 +3,7 @@
 session_start();
 
 
-include ('../config/config.php');
+include('../config/config.php');
 
 
 $username = $_REQUEST['username'];
@@ -29,8 +29,8 @@ if ($button == "get") {
 
     // }
 
-     $_SESSION['agencyusername'] = $username;
-     $_SESSION['agencypassword'] = $password;
+    $_SESSION['agencyusername'] = $username;
+    $_SESSION['agencypassword'] = $password;
 
     // $cookiename = $name;
     // $cookievalue = $password;
