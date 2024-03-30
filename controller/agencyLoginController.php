@@ -39,6 +39,7 @@ if ($button == "get") {
     // setcookie($cookiename, $cookievalue, $expiration, $path);
 
     header("Location: ../views/addnewcars.php");
+    die();
     //header('../views/addNewCars.php');
     // header("../views/addNewCars.php");
 

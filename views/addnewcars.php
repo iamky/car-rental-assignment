@@ -4,6 +4,7 @@ if (isset($_SESSION['agencyusername'])) {
   echo "<p>Welcome " . $_SESSION['agencyusername'] . "</p>";
 } else {
   header("Location: ../views/agency.php");
+  die();
 }
 ?>
 <!DOCTYPE html>

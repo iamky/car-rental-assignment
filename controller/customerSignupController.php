@@ -22,6 +22,7 @@ if ($button == 'save') {
 
       //echo "User data saved...";
       header("Location: ../views/customer.php");
+      die();
     } else {
       echo "User data cannot be saved";
     }

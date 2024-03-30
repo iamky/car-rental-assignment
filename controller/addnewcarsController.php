@@ -29,6 +29,7 @@ if ($button == "save") {
 
 
     header("Location: ../views/editcars.php");
+    die();
   } else {
     echo "Cannot save car...";
   }

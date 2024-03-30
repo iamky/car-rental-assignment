@@ -28,6 +28,7 @@ if ($button == "update") {
 
 
     header("Location: ../views/editcars.php");
+    die();
   } else {
     echo "Cannot update car...";
   }

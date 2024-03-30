@@ -32,6 +32,7 @@ if ($button == "book") {
 
 
     header("Location: ../views/availablecars.php");
+    die();
   } else {
     echo "Cannot book car...";
   }
