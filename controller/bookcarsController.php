@@ -21,14 +21,14 @@ if ($button == "book") {
 
   $query = "UPDATE cars SET cusername='$cusername', days='$days', bookdate='$bookdate', status='$status' WHERE vnumber='$vnumber' ";
   //$query = "INSERT INTO cars (cusername, days, bookdate) VALUES ('$cusername','$days','$bookdate') WHERE vnumber='$vnumber'";
-  echo $query;
+  //echo $query;
   //$query .= "UPDATE cars SET status='$status' WHERE vnumber='$vnumber' ";
   // echo $query;
   $exc = mysqli_query($conn, $query);
 
-  $norows = mysqli_num_rows($exc);
+  //$norows = mysqli_num_rows($exc);
   // echo $norows;
-  if ($norows == 1) {
+  if ($exc) {
 
 
     header("Location: ../views/availablecars.php");

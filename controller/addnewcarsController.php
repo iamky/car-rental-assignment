@@ -20,12 +20,12 @@ $button = $_REQUEST['submit'];
 if ($button == "save") {
 
   $query = "INSERT INTO cars (ausername, vmodel, vnumber, capacity, rent, status) VALUES ('$ausername','$vmodel','$vnumber','$capacity','$rent', '$status')";
-  echo $query;
+  //echo $query;
   $exc = mysqli_query($conn, $query);
 
-  $norows = mysqli_num_rows($exc);
+  //$norows = mysqli_num_rows($exc);
   // echo $norows;
-  if ($norows == 1) {
+  if ($exc) {
 
 
     header("Location: ../views/editcars.php");
